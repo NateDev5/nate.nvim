@@ -23,6 +23,9 @@ require("oil").setup({
 		},
 		max_width = 200,
 		max_height = 200,
+	},
+	view_options = {
+		show_hidden = true
 	}
 })
 require("lualine").setup()
