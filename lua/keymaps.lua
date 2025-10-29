@@ -6,6 +6,10 @@ kmap("n", "<leader>e", ":Oil<CR>")
 kmap("n", "<leader>so", ":so<CR>")
 kmap("n", "<leader>wa", ":wa<CR>")
 
+kmap("n", "<leader>d", vim.diagnostic.open_float)
+
+kmap("n", "<leader>fb", vim.lsp.buf.format)
+
 local builtin = require("telescope.builtin")
 
 kmap("n", "<leader>ff", builtin.find_files)

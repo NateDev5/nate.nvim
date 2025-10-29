@@ -9,3 +9,10 @@ vim.o.smartindent = true
 vim.o.termguicolors = true
 vim.o.background = "dark"
 
+vim.diagnostic.config({
+	virtual_text = false,
+	signs = true,
+	underline = true,
+	update_in_insert = false,
+	severity_sort = true
+})

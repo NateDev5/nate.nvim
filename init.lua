@@ -1,18 +1,6 @@
 require("options")
-
-vim.pack.add({
-	"https://github.com/vague-theme/vague.nvim",
-	"https://github.com/nvim-lua/plenary.nvim",
-	"https://github.com/nvim-telescope/telescope.nvim",
-	"https://github.com/stevearc/oil.nvim",
-	"https://github.com/nvim-tree/nvim-web-devicons",
-	"https://github.com/nvim-lualine/lualine.nvim",
-	"https://github.com/mason-org/mason.nvim",
-	"https://github.com/neovim/nvim-lspconfig"
-
-})
-
-require("keymaps");
+require("packs")
+require("keymaps")
 
 require("vague").setup({ transparent = false })
 require("oil").setup({
@@ -26,9 +14,18 @@ require("oil").setup({
 	},
 	view_options = {
 		show_hidden = true
+	},
+	skip_confirm_for_simple_edits = true
+})
+
+require("commands")
+require("lsp")
+
+require("lualine").setup()
+require("blink-pairs").setup({
+	mappings = {
+		enable = true
 	}
 })
-require("lualine").setup()
-require("mason").setup()
-require("commands")
+require("blink-cmp").setup()
 
