@@ -35,5 +35,6 @@ vim.pack.add({
 	"https://github.com/neovim/nvim-lspconfig",
 	"https://github.com/saghen/blink.pairs",
 	"https://github.com/saghen/blink.cmp",
-	"https://github.com/saghen/blink.download"
+	"https://github.com/saghen/blink.download",
+	"https://github.com/nvim-treesitter/nvim-treesitter"
 })

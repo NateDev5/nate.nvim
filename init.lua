@@ -24,8 +24,16 @@ require("lsp")
 require("lualine").setup()
 require("blink-pairs").setup({
 	mappings = {
-		enable = true
+		enabled = true
 	}
 })
-require("blink-cmp").setup()
+require("blink-cmp").setup({
+	fuzzy = {
+		implementation = "lua"
+	}
+})
 
+require("nvim-treesitter.configs").setup({
+	highlight = { enable = true },
+	indent = { enable = true }
+})
