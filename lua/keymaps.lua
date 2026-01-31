@@ -8,6 +8,8 @@ kmap("n", "<leader>wa", ":wa<CR>")
 
 kmap("n", "<leader>d", vim.diagnostic.open_float)
 
+kmap("n", "<leader>h", vim.lsp.buf.hover)
+
 kmap("n", "<leader>fb", vim.lsp.buf.format)
 
 kmap("n", "<leader>s", ":LspClangdSwitchSourceHeader<CR>", { noremap = true, silent = true })

@@ -37,3 +37,10 @@ require("nvim-treesitter.configs").setup({
 	highlight = { enable = true },
 	indent = { enable = true }
 })
+
+vim.lsp.config("tinymist", {
+	settings = {
+		formatterMode = "typstyle",
+		semanticTokens = "disable"
+	}
+})
