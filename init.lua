@@ -27,6 +27,15 @@ require("blink-pairs").setup({
 		enabled = true
 	}
 })
+
+require("nvim-ts-autotag").setup({
+	opts = {
+		enable_close = true,
+		enable_rename = true,
+		enable_close_on_slash = false
+	}
+})
+
 require("blink-cmp").setup({
 	fuzzy = {
 		implementation = "lua"
@@ -37,7 +46,6 @@ require("nvim-treesitter.configs").setup({
 	highlight = { enable = true },
 	indent = { enable = true }
 })
-
 vim.lsp.config("tinymist", {
 	settings = {
 		formatterMode = "typstyle",

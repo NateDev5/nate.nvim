@@ -36,5 +36,6 @@ vim.pack.add({
 	"https://github.com/saghen/blink.pairs",
 	"https://github.com/saghen/blink.cmp",
 	"https://github.com/saghen/blink.download",
-	"https://github.com/nvim-treesitter/nvim-treesitter"
+	"https://github.com/nvim-treesitter/nvim-treesitter",
+	"https://github.com/windwp/nvim-ts-autotag"
 })
