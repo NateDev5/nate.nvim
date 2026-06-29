@@ -33,7 +33,7 @@ vim.pack.add({
 	"https://github.com/nvim-tree/nvim-web-devicons",
 	"https://github.com/nvim-lualine/lualine.nvim",
 	"https://github.com/neovim/nvim-lspconfig",
-	"https://github.com/saghen/blink.pairs",
+	{ src = "https://github.com/saghen/blink.pairs", version = "v0.5.0" },
 	"https://github.com/saghen/blink.cmp",
 	"https://github.com/saghen/blink.download",
 	"https://github.com/nvim-treesitter/nvim-treesitter",

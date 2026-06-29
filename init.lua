@@ -42,13 +42,22 @@ require("blink-cmp").setup({
 	}
 })
 
-require("nvim-treesitter.configs").setup({
-	highlight = { enable = true },
-	indent = { enable = true }
+require("nvim-treesitter").setup()
+vim.api.nvim_create_autocmd("FileType", {
+	callback = function()
+		pcall(vim.treesitter.start)
+		vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+	end
 })
 vim.lsp.config("tinymist", {
 	settings = {
 		formatterMode = "typstyle",
 		semanticTokens = "disable"
+	}
+})
+vim.lsp.config("clangd", {
+	cmd = {
+		'clangd',
+		'--query-driver=/nix/store/*gcc-wrapper*/bin/g++'
 	}
 })

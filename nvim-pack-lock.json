@@ -1,0 +1,53 @@
+{
+  "plugins": {
+    "blink.cmp": {
+      "rev": "d3874d2a13aa19b095bdd10d37a82a8f0aa7cad3",
+      "src": "https://github.com/saghen/blink.cmp"
+    },
+    "blink.download": {
+      "rev": "f29d8bac6549bc1e7d699c83f680823d7def98bd",
+      "src": "https://github.com/saghen/blink.download"
+    },
+    "blink.pairs": {
+      "rev": "4e43012356d33a26f69eae475f746fbe9f325f44",
+      "src": "https://github.com/saghen/blink.pairs",
+      "version": "'v0.5.0'"
+    },
+    "lualine.nvim": {
+      "rev": "131a558e13f9f28b15cd235557150ccb23f89286",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
+    "nvim-lspconfig": {
+      "rev": "451d4ef9abd4f0f08e379ef0d55d1c391b6125a7",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-treesitter": {
+      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "nvim-ts-autotag": {
+      "rev": "88c1453db4ba7dd24131086fe51fdf74e587d275",
+      "src": "https://github.com/windwp/nvim-ts-autotag"
+    },
+    "nvim-web-devicons": {
+      "rev": "2795c26c916bb3c57dde308b82be51971fa92747",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "oil.nvim": {
+      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "plenary.nvim": {
+      "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
+      "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
+    "telescope.nvim": {
+      "rev": "f04ab730b8f9c6bf3f54a206d0dcddfd70c52d59",
+      "src": "https://github.com/nvim-telescope/telescope.nvim"
+    },
+    "vague.nvim": {
+      "rev": "fd58046b9d64259d9785e4aeb6d6f494c6943cad",
+      "src": "https://github.com/vague-theme/vague.nvim"
+    }
+  }
+}
